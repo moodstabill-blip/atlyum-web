@@ -1,2 +1,18 @@
-# atlyum-web
-Atlyum social platform (web version)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atlyum</title>
+    <style>
+        html, body {
+            margin: 0;          
+            padding: 0;         
+            height: 100%;       
+            background-color: #000; 
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
