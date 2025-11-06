@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Atlyum</title>
-    <style>
-        /* Sayfa ve arka plan ayarları */
-        html, body {
-            margin: 0;          /* tarayıcı kenar boşluklarını kaldır */
-            padding: 0;         /* iç boşlukları kaldır */
-            height: 100%;       /* tüm ekran yüksekliği */
-            background-color: #000; /* siyah arka plan */
+<meta charset="UTF-8">
+<title>Atlyum</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000; /* siyah arka plan */
+        font-family: 'Aptos', sans-serif;
+        color: white;
+        position: relative;
+    }
+
+    /* Ortadaki ince gri çizgi */
+    .divider {
+        position: absolute;
+        left: 50%;          /* tam ortada */
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #000; /* gri renk */
+        transform: translateX(-50%);
+    }
+
+    /* Atlyum yazısı */
+    .right-panel {
+        position: absolute;
+        left: 55%;                /* çizginin sağında */
+        top: 15%;                 /* yukarıda biraz boşluk */
+        transform: translateX(40px); /* çizgiden sağa mesafe */
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+    }
+
+    /* Responsive - küçük ekranlar (telefon) */
+    @media (max-width: 800px) {
+        .divider {
+            left: 50%; /* çizgi aynı yerde */
         }
-    </style>
+        .right-panel {
+            left: 50%;          /* çizginin sağında değil, ortalanmış */
+            top: 10%;
+            transform: translateX(20px); /* çizgiden biraz sağa */
+            font-size: 36px;    /* yazı biraz küçüldü */
+            text-align: center;
+        }
+    }
+</style>
 </head>
 <body>
-    <!-- Sayfa boş, sadece siyah arka plan -->
+
+    <div class="divider"></div>
+
+    <div class="right-panel">Atlyum</div>
+
 </body>
 </html>
