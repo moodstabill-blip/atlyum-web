@@ -4,18 +4,28 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins";
-    color:#fff
+    color: #fff;
 }
 body{
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #25252b;
+    background: #000;
 }
 .container{
     position: relative;
     width: 750px;
     height: 450px;
     border: 2px solid #fff;
+    box-shadow: 0 0 25px #fff;
+}
+.container .form-box{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
