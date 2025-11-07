@@ -4,21 +4,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins";
-    color: #fff;
+    color: #000;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: #fff;
 }
 .container{
     position: relative;
     width: 750px;
     height: 450px;
-    border: 2px solid #fff;
-    box-shadow: 0 0 25px #fff;
+    border: 2px solid #000;
+    box-shadow: 0 0 25px #000;
 }
 .container .form-box{
     position: absolute;
@@ -28,4 +28,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.form-box h2{
+
 }
