@@ -65,6 +65,30 @@
             <h2 class="animation" style="--li:17; --S:0;">ATLYUM</h2>
             <p class="animation" style="--li:18; --S:1;">Every code starts with a dream!</p2>
     </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAuth } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyDyU71UIZuTh-guXdz11S-4G472aG-UsN0",
+    authDomain: "atlyum.firebaseapp.com",
+    projectId: "atlyum",
+    storageBucket: "atlyum.firebasestorage.app",
+    messagingSenderId: "450591148047",
+    appId: "1:450591148047:web:42fadc3460d30901d1bb7a",
+    measurementId: "G-EYRJJ1N558"
+  };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const analytics = getAnalytics(app);
+
+    window.auth = auth;
+    window.db = db;
+</script>
     <script src="index.js"></script>
 </body>
 </html>
